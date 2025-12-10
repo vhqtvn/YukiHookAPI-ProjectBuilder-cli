@@ -8,10 +8,10 @@ const fs = require('fs');
 // Mock Electron components
 const app = {
     isPackaged: false,
-    getAppPath: () => __dirname,
+    getAppPath: () => process.cwd(),
     getPath: (name) => {
-        if (name === 'appData') return path.join(__dirname, 'data');
-        return __dirname;
+        if (name === 'appData') return path.join(process.cwd(), 'data');
+        return process.cwd();
     }
 };
 
@@ -79,7 +79,7 @@ const appWindow = {
 const { fileSystem } = require('./src/libs/file-system');
 const appConfig = {
     sourcePath: __dirname,
-    dataPath: path.join(__dirname, 'data', 'YukiHookAPI'),
+    dataPath: path.join(process.cwd(), 'data', 'YukiHookAPI'),
     createDataDir: () => {
         const dataPath = appConfig.dataPath;
         if (!fs.existsSync(dataPath)) fs.mkdirSync(dataPath, { recursive: true });
