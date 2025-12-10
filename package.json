@@ -19,5 +19,20 @@
     "fs-extra": "^10.1.0",
     "inquirer": "^9.2.12",
     "xml2js": "^0.6.2"
+  },
+  "pkg": {
+    "scripts": "src/**/*.js",
+    "assets": [
+      "public/**/*"
+    ],
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
   }
 }
