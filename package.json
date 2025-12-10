@@ -1,0 +1,23 @@
+{
+  "name": "yukihookapi-projectbuilder",
+  "productName": "YukiHookAPI Project Builder",
+  "version": "1.0.8",
+  "description": "A Xposed Project Builder by YukiHookAPI",
+  "main": "cli.js",
+  "bin": {
+    "yukihookapi-cli": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "author": "HighCapable",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dayjs": "^1.11.3",
+    "decompress-zip": "^0.3.3",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^9.2.12",
+    "xml2js": "^0.6.2"
+  }
+}
