@@ -143,4 +143,4 @@ lib-cov
 .node_repl_history
 *.tgz
 .yarn-integrity
-.env
+.envdist/
