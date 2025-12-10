@@ -17,6 +17,9 @@ DOWNLOAD_URL="https://github.com/$REPO/releases/latest/download/$ASSET_NAME"
 TEMP_DIR=$(mktemp -d)
 TARGET_FILE="$TEMP_DIR/$ASSET_NAME"
 
+# Ensure cleanup on exit
+trap "rm -rf $TEMP_DIR" EXIT
+
 echo "Downloading $ASSET_NAME from latest release..."
 curl -L --fail -o "$TARGET_FILE" "$DOWNLOAD_URL"
 
@@ -28,10 +31,4 @@ fi
 chmod +x "$TARGET_FILE"
 
 echo "Running YukiHookAPI Project Builder..."
-"$TARGET_FILE"
-
-# Cleanup is tricky if the process replaces itself or runs long.
-# But usually we want to keep it or install it?
-# The user said "run this project easily".
-# If they want to install, they might move it.
-# For now, this script just runs it once.
+"$TARGET_FILE" "$@"
