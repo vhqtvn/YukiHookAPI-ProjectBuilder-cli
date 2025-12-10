@@ -8,16 +8,21 @@
 
 <img src="img-src/icon.png" width = "100" height = "100" alt="LOGO"/>
 
-帮助你快速创建一个使用 YukiHookAPI 打造的 Xposed 项目模板。
+YukiHookAPI 项目构建器的命令行移植版本。
 
 [English](README.md) | 简体中文
+
+> **注意**: 这是原版 [YukiHookAPI-ProjectBuilder](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder) 的命令行移植版本。
+> 原项目是一个使用 Electron 构建的 GUI 应用程序。此分支将其转换为命令行工具，以便在无头环境或脚本中更轻松地使用。
+
+## 原项目致谢
 
 | <img src="https://github.com/HighCapable/.github/blob/main/img-src/logo.jpg?raw=true" width = "30" height = "30" alt="LOGO"/> | [HighCapable](https://github.com/HighCapable) |
 |-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 
-这个项目属于上述组织，**点击上方链接关注这个组织**，发现更多好项目。
+原项目属于上述组织，**点击上方链接关注这个组织**，发现更多好项目。
 
-## 项目迁移公告
+## 原项目迁移公告
 
 这个项目最终的目的就是创建一个新的 Android Studio/IDEA 项目模版，然后再在对应的 IDE 中打开项目。
 

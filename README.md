@@ -8,16 +8,21 @@
 
 <img src="img-src/icon.png" width = "100" height = "100" alt="LOGO"/>
 
-A Xposed Project Builder by YukiHookAPI.
+A CLI port of the Xposed Project Builder by YukiHookAPI.
 
 English | [简体中文](README-zh-CN.md)
+
+> **Note**: This is a CLI port of the original [YukiHookAPI-ProjectBuilder](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder).
+> The original project is a GUI application built with Electron. This fork converts it into a command-line tool for easier usage in headless environments or scripts.
+
+## Original Project Credits
 
 | <img src="https://github.com/HighCapable/.github/blob/main/img-src/logo.jpg?raw=true" width = "30" height = "30" alt="LOGO"/> | [HighCapable](https://github.com/HighCapable) |
 |-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 
-This project belongs to the above-mentioned organization, **click the link above to follow this organization** and discover more good projects.
+The original project belongs to the above-mentioned organization. **Click the link above to follow this organization** and discover more good projects.
 
-## Project Migration Notice
+## Original Project Migration Notice
 
 The ultimate goal of this project is to create a new Android Studio/IDEA project template, and then open the project in the corresponding IDE.
 
