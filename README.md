@@ -1,7 +1,7 @@
 # YukiHookAPI Project Builder
 
-[![GitHub license](https://img.shields.io/github/license/HighCapable/YukiHookAPI-ProjectBuilder?color=blue&style=flat-square)](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/HighCapable/YukiHookAPI-ProjectBuilder?display_name=release&logo=github&color=green&style=flat-square)](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder/releases)
+[![GitHub license](https://img.shields.io/github/license/vhqtvn/YukiHookAPI-ProjectBuilder-cli?color=blue&style=flat-square)](https://github.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/blob/main/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/vhqtvn/YukiHookAPI-ProjectBuilder-cli?display_name=release&logo=github&color=green&style=flat-square)](https://github.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/releases)
 [![Telegram](https://img.shields.io/badge/discussion-Telegram-blue.svg?logo=telegram&style=flat-square)](https://t.me/YukiHookAPI)
 [![Telegram](https://img.shields.io/badge/discussion%20dev-Telegram-blue.svg?logo=telegram&style=flat-square)](https://t.me/HighCapable_Dev)
 [![QQ](https://img.shields.io/badge/discussion%20dev-QQ-blue.svg?logo=tencent-qq&logoColor=red&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=Pnsc5RY6N2mBKFjOLPiYldbAbprAU3V7&jump_from=webapi&authKey=X5EsOVzLXt1dRunge8ryTxDRrh9/IiW1Pua75eDLh9RE3KXE+bwXIYF5cWri/9lf)
@@ -42,60 +42,38 @@ Implementing automated search relies on quickly building an Android project temp
 
 ## How to use
 
-This project is developed using **Electron** to quickly build and run multi-platform localized applications.
+This is a CLI tool to quickly build Xposed Modules using YukiHookAPI.
 
-You can download the application for your platform directly
-from [Release](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder/releases).
+### Quick Run
 
-> The following are the manual deployment and compilation steps
+You can run the tool directly without installation using the following command:
 
-First you need to install [node.js](https://nodejs.org/en/)
-
-IDE tools recommend **IntelliJ IDEA** or **WebStorm**.
-
-Formatting code with **Visual Studio Code** is not recommended and may cause some errors.
-
-Execute the following command to install Electron.
-
-```
-npm install --save-dev electron
+```bash
+curl -sL https://raw.githubusercontent.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/main/run.sh | bash
 ```
 
-Execute the following command to install yarn.
+This will download the latest release and run it.
 
-```
-npm install yarn
-```
+### Manual Installation
 
-Enter the project directory and execute the following command to install dependencies.
+You can also download the executable for your platform from [Releases](https://github.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/releases).
 
-```
-npm install --save-dev @electron-forge/cli
-```
+### Development
 
-```
-npx electron-forge import
-```
-
-Use the following command to debug.
-
-```
-npm run start
-```
-
-Use the following commands to compile & package.
-
-**Linux/macOS**
-
-```
-npm run make
-```
-
-**Windows**
-
-```
-npm run package
-```
+1. Install [Node.js](https://nodejs.org/en/) (v18+ recommended).
+2. Clone the repository.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the tool:
+   ```bash
+   npm start
+   ```
+5. Build executables:
+   ```bash
+   npx pkg .
+   ```
 
 ## Promotion
 

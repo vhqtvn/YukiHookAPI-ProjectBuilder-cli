@@ -1,7 +1,7 @@
 # YukiHookAPI Project Builder
 
-[![GitHub license](https://img.shields.io/github/license/HighCapable/YukiHookAPI-ProjectBuilder?color=blue&style=flat-square)](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/HighCapable/YukiHookAPI-ProjectBuilder?display_name=release&logo=github&color=green&style=flat-square)](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder/releases)
+[![GitHub license](https://img.shields.io/github/license/vhqtvn/YukiHookAPI-ProjectBuilder-cli?color=blue&style=flat-square)](https://github.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/blob/main/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/vhqtvn/YukiHookAPI-ProjectBuilder-cli?display_name=release&logo=github&color=green&style=flat-square)](https://github.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/releases)
 [![Telegram](https://img.shields.io/badge/discussion-Telegram-blue.svg?logo=telegram&style=flat-square)](https://t.me/YukiHookAPI)
 [![Telegram](https://img.shields.io/badge/discussion%20dev-Telegram-blue.svg?logo=telegram&style=flat-square)](https://t.me/HighCapable_Dev)
 [![QQ](https://img.shields.io/badge/discussion%20dev-QQ-blue.svg?logo=tencent-qq&logoColor=red&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=Pnsc5RY6N2mBKFjOLPiYldbAbprAU3V7&jump_from=webapi&authKey=X5EsOVzLXt1dRunge8ryTxDRrh9/IiW1Pua75eDLh9RE3KXE+bwXIYF5cWri/9lf)
@@ -37,55 +37,38 @@
 
 ## 如何使用
 
-本项目使用 **Electron** 开发，快速实现多平台本地化应用程序的构建和运行。
+这是一个使用 YukiHookAPI 快速构建 Xposed 模块的命令行工具。
 
-你可以直接从 [Release](https://github.com/HighCapable/YukiHookAPI-ProjectBuilder/releases) 下载适合于你平台的应用程序。
+### 快速运行
 
-> 以下是手动部署与编译步骤
+你可以使用以下命令直接运行工具，无需安装：
 
-首先你需要安装 [node.js](https://nodejs.org/zh-cn/)
-
-- 执行如下命令安装 Electron
-
-```
-npm install --save-dev electron
+```bash
+curl -sL https://raw.githubusercontent.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/main/run.sh | bash
 ```
 
-- 执行如下命令安装 yarn
+这将下载最新版本并运行它。
 
-```
-npm install yarn
-```
+### 手动安装
 
-- 进入项目目录，执行如下命令安装依赖
+你也可以从 [Releases](https://github.com/vhqtvn/YukiHookAPI-ProjectBuilder-cli/releases) 下载对应平台的可执行文件。
 
-```
-npm install --save-dev @electron-forge/cli
-```
+### 开发
 
-```
-npx electron-forge import
-```
-
-- 使用如下命令进行调试
-
-```
-npm run start
-```
-
-- 使用如下命令进行编译 & 打包
-
-**Linux/macOS**
-
-```
-npm run make
-```
-
-**Windows**
-
-```
-npm run package
-```
+1. 安装 [Node.js](https://nodejs.org/zh-cn/) (推荐 v18+)。
+2. 克隆仓库。
+3. 安装依赖：
+   ```bash
+   npm install
+   ```
+4. 运行工具：
+   ```bash
+   npm start
+   ```
+5. 构建可执行文件：
+   ```bash
+   npx pkg .
+   ```
 
 ## 项目推广
 
